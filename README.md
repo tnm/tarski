@@ -121,7 +121,6 @@ Create some objects. In practice, this data will almost certainly come from runt
 
 ```scala
 val tom = Person("Tom", 28, List("Jess", "Ben", "Jessica"))
-val jen = Person("Jen", 28, List("Jess", "Ben", "Jessica"))
 val jess = Person("Jess", 28, List("Ben"))
 ```
 
@@ -129,9 +128,6 @@ And now call some methods:
 
 ```scala
 tom.isValid
-  > true
-
-jen.isValid
   > true
 
 jess.isValid
@@ -152,8 +148,8 @@ case class into a database. If you want to provide application-level validation 
 mix `Validation` into your case class (like above) and define predicates that must be met. Then just call `isValid` before doing
 anything more.
 
-Author & License
-----------------
+Author & MIT License
+---------------------
 
 Copyright (c) 2011 Ted Nyman
 
