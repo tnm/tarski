@@ -69,4 +69,11 @@ class TarskiSpec extends Spec {
       wordExample.getErrors.must(be(error))
     }
   }
+
+  class `A ValidationError case class` {
+    @Test def `has a getMessage method, returning the error message` = {
+      val anError = Set[ValidationError](ValidationError("100 Word Too Short"))
+      anError.head.getMessage.must(be("100 Word Too Short"))
+    }
+  }
 }

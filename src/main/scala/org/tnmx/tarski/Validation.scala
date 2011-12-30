@@ -3,7 +3,9 @@ package org.tnmx.tarski
 /**
  * A validation error returns a String error message.
  */
-case class ValidationError(message: String)
+case class ValidationError(message: String) {
+  def getMessage: String = message
+}
 
 /**
  * A ValidationRule consists of a boolean expression specified in the `validate` method,
