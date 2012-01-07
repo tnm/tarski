@@ -30,7 +30,7 @@ If you're using Maven:
   <dependency>
     <groupId>org.tnmx</groupId>
     <artifactId>tarski_2.9.1</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
   </dependency>
 </dependencies>
 ```
@@ -41,7 +41,7 @@ Or SBT 0.10:
 
 resolvers += "tnm Repo" at "https://github.com/tnm/tnm-mvn-repo/raw/master/releases/"
 
-libraryDependencies += "org.tnmx"  %% "tarski"  % "0.1.0"
+libraryDependencies += "org.tnmx"  %% "tarski"  % "0.1.1"
 
 ```
 
