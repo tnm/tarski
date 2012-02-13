@@ -108,7 +108,7 @@ case class FriendsRule(friends: List[String]) extends ValidationRule {
 
 ```
 
-Write a case class that extends `Validations`.
+Write a case class that extends `Validations` and defines `validations`.
 
 ```scala
 case class Person(name: String, age: Int, friends: List[String]) extends Validations {
