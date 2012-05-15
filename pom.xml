@@ -11,7 +11,7 @@
 
     <packaging>pom</packaging>
     <url>https://github.com/tnm/tarski</url>    
-    <description>tarski is a small Scala library that makes it easy to add arbitrary validations to any Scala class</description>
+    <description>tarski is a small Scala library that makes it easy to add arbitrary validations to any Scala class.</description>
 
     <properties>
         <scala.version>2.9.1</scala.version>
@@ -61,7 +61,7 @@
             <version>${scala.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codahale</groupId>
+            <groupId>com.simple</groupId>
             <artifactId>simplespec_${scala.version}</artifactId>
             <version>0.6.0</version>
             <scope>test</scope>
