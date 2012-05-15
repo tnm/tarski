@@ -9,7 +9,7 @@
     <version>0.2.0</version>
     <name>tarski</name>
 
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <url>https://github.com/tnm/tarski</url>    
     <description>tarski is a small Scala library that makes it easy to add arbitrary validations to any Scala class.</description>
 
