@@ -30,7 +30,7 @@ If you're using Maven:
   <dependency>
     <groupId>org.tnmx</groupId>
     <artifactId>tarski_2.9.1</artifactId>
-    <version>0.1.1</version>
+    <version>0.2.0</version>
   </dependency>
 </dependencies>
 ```
