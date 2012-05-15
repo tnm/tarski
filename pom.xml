@@ -6,8 +6,12 @@
 
     <groupId>org.tnmx</groupId>
     <artifactId>tarski_2.9.1</artifactId>
-    <version>0.1.1</version>
+    <version>0.2.0</version>
     <name>tarski</name>
+
+    <packaging>pom</packaging>
+    <url>https://github.com/tnm/tarski</url>    
+    <description>tarski is a small Scala library that makes it easy to add arbitrary validations to any Scala class</description>
 
     <properties>
         <scala.version>2.9.1</scala.version>
@@ -45,21 +49,10 @@
 
     <repositories>
         <repository>
-            <id>scala-tools-releases</id>
-            <url>http://scala-tools.org/repo-releases/</url>
-        </repository>
-        <repository>
             <id>repo.codahale.com</id>
             <url>http://repo.codahale.com</url>
         </repository>
     </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>scala-tools-releases</id>
-            <url>http://scala-tools.org/repo-releases/</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <dependencies>
         <dependency>
@@ -70,7 +63,7 @@
         <dependency>
             <groupId>com.codahale</groupId>
             <artifactId>simplespec_${scala.version}</artifactId>
-            <version>0.5.1</version>
+            <version>0.6.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -101,10 +94,10 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.scala-tools</groupId>
-                <artifactId>maven-scala-plugin</artifactId>
-                <version>2.15.2</version>
+             <plugin>
+              <groupId>net.alchim31.maven</groupId>
+              <artifactId>scala-maven-plugin</artifactId>
+              <version>3.0.1</version>
                 <executions>
                     <execution>
                         <goals>
@@ -114,14 +107,14 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <verbose>true</verbose>
                     <args>
-                        <arg>-optimise</arg>
                         <arg>-unchecked</arg>
                         <arg>-deprecation</arg>
                     </args>
                     <charset>UTF-8</charset>
                 </configuration>
-            </plugin>
+            </plugin>            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
