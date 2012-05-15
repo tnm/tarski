@@ -1,6 +1,6 @@
 package org.tnmx.tarski.tests
 
-import com.codahale.simplespec.Spec
+import com.simple.simplespec.Spec
 import org.tnmx.tarski._
 import org.junit.Test
 
