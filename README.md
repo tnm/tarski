@@ -19,13 +19,6 @@ First, include **tarski** as a project dependency. The current release is for Sc
 If you're using Maven:
 
 ```xml
-<repositories>
-  <repository>
-    <id>tnm-releases</id>
-    <url>https://github.com/tnm/tnm-mvn-repo/raw/master/releases/</url>
-  </repository>
-</repositories>
-
 <dependencies>
   <dependency>
     <groupId>org.tnmx</groupId>
@@ -34,18 +27,6 @@ If you're using Maven:
   </dependency>
 </dependencies>
 ```
-
-Or SBT 0.10:
-
-```scala
-
-resolvers += "tnm Repo" at "https://github.com/tnm/tnm-mvn-repo/raw/master/releases/"
-
-libraryDependencies += "org.tnmx"  %% "tarski"  % "0.1.1"
-
-```
-
-(I'll put it on Central soon).
 
 How to Use
 ------------
